@@ -22,7 +22,7 @@ export async function connectToMongo() {
   try {
     await client.connect();
     console.log("✅ MongoDB connected successfully!");
-    db = client.db("integration_ninjas");
+    db = client.db("mydb");
     return db;
   } catch (e) {
     console.error("❌ MongoDB connection failed:", e);
